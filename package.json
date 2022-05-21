@@ -1,0 +1,16 @@
+{
+  "name": "proyectofinal",
+  "version": "1.0.0",
+  "description": "Proyecto Final de JavaScript",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch ./scss -o ./css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  }
+}

@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@100;400&family=Montserrat&display=swap");
+/*Variables*/
+:root {
+  --color-fondo: rgb(241, 241, 241);
+  --color-texto: #000000;
+  --color-resaltado: #5A58F7;
+  --tipo-titulos: 'Montserrat', sans-serif;
+  --tipo-textos: 'Hepta Slab', serif; }
+
+/*Resets*/
+*,
+*::before,
+*::after {
+  margin: 0px;
+  border: 0px;
+  box-sizing: border-box;
+  padding-inline-start: 0px;
+  margin-block-start: 0px;
+  padding-inline-end: 0px;
+  margin-block-end: 0px; }
+
+/*Body*/
+body {
+  font-size: 62.5%;
+  min-height: 100vh;
+  background-image: url("../image/fondo.png");
+  font-family: var(--tipo-textos); }
+  body body a {
+    text-decoration: none;
+    color: var(--color-texto); }
+  body body a:visited {
+    color: var(--color-texto); }
+  body main {
+    min-height: 100vh;
+    margin: auto;
+    max-width: 70%;
+    background-color: var(--color-fondo);
+    padding: 5%;
+    font-size: 1.5em; }
+    body main h1 {
+      font-family: var(--tipo-titulos);
+      color: var(--color-resaltado); }
+    body main h2 {
+      font-family: var(--tipo-titulos); }
+    body main h3 {
+      font: var(--tipo-titulos);
+      color: var(--color-resaltado); }
+    body main form .bloque {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 3vw;
+      margin-bottom: 5vh; }
+      body main form .bloque label {
+        display: block;
+        margin-bottom: 0.5em; }
+      body main form .bloque input, body main form .bloque select {
+        display: block;
+        margin-bottom: 2em;
+        border: 1px solid black;
+        font-size: 1em;
+        padding: 0.5em; }
+      body main form .bloque .plan {
+        border: 3px solid var(--color-resaltado);
+        background-color: white;
+        padding: 1em; }
+      body main form .bloque .plan_radio {
+        display: inline; }
+    body main button {
+      display: block;
+      margin-bottom: 2em;
+      background-color: var(--color-resaltado);
+      font-size: 1.5em;
+      font-family: 'Montserrat', sans-serif;
+      color: white;
+      padding: 0.5em; }
+    body main #respuesta {
+      margin-top: 4em;
+      border: 3px solid var(--color-resaltado);
+      background-color: white;
+      padding: 1em; }
+      body main #respuesta #respuesta_ficha {
+        font-family: var(--tipo-textos); }
+        body main #respuesta #respuesta_ficha .respuesta_campo {
+          color: var(--color-resaltado); }
+  body .centrado {
+    text-align: center; }
+  body .espacio_abajo {
+    margin-bottom: 1.2em; }
+  body .invisible {
+    display: none; }
+  body .visible {
+    display: block; }
