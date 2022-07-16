@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Formulario de Inscripcion</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body onload="botonFormulario()">
+    <main>  
+        <h2>Formulario de inscripción</h2>
+        <h1>Marketing Digital y Community Manager</h1>
+        <h3>Curso de capacitación profesional | 6 meses</h3>
+        <br>
+
+        <form class="main__section" id="formularioInsc">
+            <div class="bloque">
+                    <div>    
+                    <label>Ingresa tu nombre</label>
+                    <input class="nombre" type="text" id="nombre" name="nombre" placeholder="">
+
+                    <label>Ingresa tu fecha de nacimiento</label>
+                    <input class="fecha" type="date" id="nacimiento" name="fecha" placeholder="">
+                    
+                    <label>Ingresa tu email</label>
+                    <input class="email" type="email" id="correo" name="correo" placeholder="">
+                </div>
+                <div>
+                    <label>Ingresa tu apellido</label>
+                    <input class="apellido" type="text" id="apellido" name="apellido" placeholder="">
+                    
+                    <label>Ingresa tu DNI o número de identificación</label>
+                    <input class="dni" type="number" id="dni" name="dni" placeholder="">
+
+                    <label>Ingresa tu número de telefono</label>
+                    <input class="telefono" type="number" id="telefono" name="telefono" placeholder="">
+                </div>
+            </div>
+            <div class="bloque">
+                <div>    
+                    <label>Ingresa tu direccion</label>
+                    <input class="direccion" type="text" id="direccion" name="direccion" placeholder="">
+
+                    <label>Ingresa la provincia donde vivis</label>
+                    <input class="provincia" type="text" id="provincia" name="provincia" placeholder="">
+                </div>    
+                <div>    
+                    <label>Ingresa la localidad donde vivis</label>
+                    <input class="localidad" type="text" id="localidad" name="localidad" placeholder="">
+                    
+                    <label>Ingresa el pais donde vivis</label>
+                    <select id="pais" name="pais_residencia">
+                        <option value="Argentina">Argentina</option>
+                        <option value="Otro">Otro</option>    
+                    </select>
+                </div>
+            </div>
+            <div class="bloque">
+                <div> 
+                    <label>Nivel educativo</label>
+                    <select id="educativo" name="nivel_educativo">
+                        <option value="Estudios secundarios en curso">Estudios secundarios en curso</option>
+                        <option value="Estudios secundarios incompletos">Estudios secundarios incompletos</option>
+                        <option value="Estudios secundarios completos">Estudios secundarios completos</option>
+                        <option value="Estudios terciarios en curso">Estudios terciarios en curso</option>
+                        <option value="Estudios terciarios incompletos">Estudios terciarios incompletos</option>
+                        <option value="Estudios terciarios completo">Estudios terciarios completos</option>
+                        <option value="Estudios universitarios en curso">Estudios universitarios en curso</option>
+                        <option value="Estudios universitarios incompletos">Estudios universitarios incompletos</option>
+                        <option value="Estudios universitarios completos">Estudios universitarios completos</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+
+                    <label>Ocupación laboral o profesion</label>
+                    <input class="profesion" type="text" id="profesion" name="profesion" placeholder="">
+                </div>
+                <div>    
+                    <label>¿Que estudiaste?</label>
+                    <input class="estudios" type="text" id="carrera" name="carrera" placeholder="">
+                </div>
+            </div>
+            <div class="bloque">
+                <div>     
+                    <label>¿Como te enteraste del curso de Marketing Digital y Community Manager?</label>
+                    <select id="enterarse" name="enterarse_curso">
+                        <option value="Por un anuncio de Facebook">Por un anuncio de Facebook</option>
+                        <option value="Por un anuncio de Instagram">Por un anuncio de Instagram</option>
+                        <option value="Por una persona que conozco">Por una persona que conozco</option>
+                        <option value="Por un evento de Facebook">Por un evento de Facebook</option>
+                        <option value="Por un evento de Linkedin">Por un evento de Linkedin</option>
+                        <option value="Por un mail que enviaron">Por un mail que enviaron</option>
+                        <option value="Por una publicación en las redes sociales">Por una publicación en las redes sociales</option>
+                        <option value="Por que busqué yo en internet">Por que busque yo en internet</option>
+                        <option value="Por que busqué yo en Facebook">Por que busque yo en Facebook</option>
+                        <option value="Por que busqué yo en Instagram">Por que busqué yo en Instagram</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </div>
+                <div>    
+                    <label>¿Por cuáles de estos medios te comunicaste antes de completar la inscripción al curso?</label>
+                    <select id="comunicarse" name="comunicarse">
+                        <option value="Por Facebook">Por Facebook</option>
+                        <option value="Por Instagram">Por Instagram</option>
+                        <option value="Por WhatsApp">Por WhatsApp</option>
+                        <option value="Por email">Por email</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </div>
+            </div>
+            <h2 class="centrado espacio_abajo">Elegí tu plan de pago</h2>
+            <div class="bloque">
+                <div class="plan">
+                    <p class="tituloPlan">- PLAN REGULAR DE PAGO MES A MES</p>
+                    <p class="cantidadCuotas">- Inscripción: $2.400</p>
+                    <p class="indicacionesPago">Se abona al momento de reservar el cupo</p>
+                    <p class="cantidadCuotas">- Cuota mensual: $4.900</p>
+                    <p class="indicacionesPago">Se abona una vez por mes durante 6 meses</p>
+                    <p class="medioPago">Medio de pago: transferencia o deposito bancario</p>
+                    <p class="planElegido"><input type="radio" id="plan1" name="plan" value="plan1" class="plan_radio"> ELEGIR ESTE PLAN</p>
+                </div>
+                <div class="plan">
+                    <p class="tituloPlan">- PROMOCIÓN POR DÉBITO AUTOMATICO</p>
+                    <p class="cantidadCuotas">- 10 cuotas de $2.900<br>Incluye inscripción y curso completo</p>
+                    <p class="indicacionesPago">Se descuenta automáticamente de tu tarjeta de crédito o débito una vez al mes durante 10 meses</p>
+                    <p class="medioPago">Medio de pago: debito automatico a través de MercadoPago</p>
+                    <p class="planElegido"><input type="radio" id="plan2" name="plan" value="plan2" class="plan_radio"> ELEGIR ESTE PLAN</p>
+                </div>
+            </div>
+        </form>
+        <br>
+        <br>
+        <button id="botonInscripcion">Inscribirme</button>
+        <div class="main__section">
+            <h3>¿Para que necesitamos tus datos personales?</h3>
+            <p>Para armar tu ficha de estudiante personalizada y mantenernos en contacto, enviarte los links a tu clase y mantenerte al tanto de las novedades de tu curso</p>
+            <br>
+            <p>cursos@pendulo.com.ar</p>
+            <p>+54 9 221 6825174</p>
+            <p>La Plata, Buenos Aires, Argentina</p>
+        </div>
+    </main>
+    <script src="./js/sweetalert2.all.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

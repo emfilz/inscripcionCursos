@@ -25,10 +25,10 @@ body {
   min-height: 100vh;
   background-image: url("../image/fondo.png");
   font-family: var(--tipo-textos); }
-  body body a {
+  body a {
     text-decoration: none;
     color: var(--color-texto); }
-  body body a:visited {
+  body a:visited {
     color: var(--color-texto); }
   body main {
     min-height: 100vh;
@@ -44,7 +44,8 @@ body {
       font-family: var(--tipo-titulos); }
     body main h3 {
       font: var(--tipo-titulos);
-      color: var(--color-resaltado); }
+      color: var(--color-resaltado);
+      margin-top: 1em; }
     body main form .bloque {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -63,6 +64,30 @@ body {
         border: 3px solid var(--color-resaltado);
         background-color: white;
         padding: 1em; }
+        body main form .bloque .plan .tituloPlan {
+          font-family: var(--tipo-titulos);
+          color: var(--color-resaltado);
+          font-size: 1.2em; }
+        body main form .bloque .plan .cantidadCuotas {
+          margin-top: 1em;
+          font-family: var(--tipo-textos);
+          color: var(--color-texto);
+          font-size: 1em; }
+        body main form .bloque .plan .indicacionesPago {
+          margin-top: 0.3em;
+          font-family: var(--tipo-titulos);
+          color: --color-texto;
+          font-size: 0.9em; }
+        body main form .bloque .plan .medioPago {
+          margin-top: 0.9em;
+          font-family: var(--tipo-titulos);
+          color: var(--color-texto);
+          font-size: 1em; }
+        body main form .bloque .plan .planElegido {
+          margin-top: 1em;
+          font-family: var(--tipo-titulos);
+          color: var(--color-texto);
+          font-size: 1.1em; }
       body main form .bloque .plan_radio {
         display: inline; }
     body main button {
@@ -72,7 +97,12 @@ body {
       font-size: 1.5em;
       font-family: 'Montserrat', sans-serif;
       color: white;
-      padding: 0.5em; }
+      padding: 0.5em;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+    body main button:hover {
+      cursor: pointer; }
+    body main button:active {
+      box-shadow: none; }
     body main #respuesta {
       margin-top: 4em;
       border: 3px solid var(--color-resaltado);
@@ -86,7 +116,3 @@ body {
     text-align: center; }
   body .espacio_abajo {
     margin-bottom: 1.2em; }
-  body .invisible {
-    display: none; }
-  body .visible {
-    display: block; }
